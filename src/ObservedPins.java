@@ -47,25 +47,25 @@ public class ObservedPins {
      * */
     public static List<String> getPINs(String observed){
         ArrayList<String> results = new ArrayList<>();
-        for(int i=0; i<observed.length(); i++){
+        for (int i = 0; i < observed.length(); i++) {
             int count;
             int lenghtOfTheAdjacentNumbers = adjacentNumbers().get(observed.charAt(i)).length;
             int signCount = 0;
-            String [] signsToAdd = adjacentNumbers().get(observed.charAt(i));
+            String[] signsToAdd = adjacentNumbers().get(observed.charAt(i));
             String singleSign;
-            for (int j=0; j < poisbleCombinations(observed); j+=poisbleCombinations(observed.substring(i+1))){
+            for (int j = 0; j < poisbleCombinations(observed); j += poisbleCombinations(observed.substring(i + 1))) {
                 count = j;
 
-                if(signCount >= lenghtOfTheAdjacentNumbers){
+                if (signCount >= lenghtOfTheAdjacentNumbers) {
                     signCount = 0;
                 }
                 singleSign = signsToAdd[signCount];
                 signCount++;
-                for (int k=0; k < poisbleCombinations(observed.substring(i+1)); k++){
-                    if(i==0){
+                for (int k = 0; k < poisbleCombinations(observed.substring(i + 1)); k++) {
+                    if (i == 0) {
                         results.add(singleSign);
-                    }else {
-                        results.set(count , results.get(count).concat(singleSign));
+                    } else {
+                        results.set(count, results.get(count).concat(singleSign));
                     }
                     count++;
 
