@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7264514-b908-410a-ad4e-5d6812167644" name="Changes" comment="Work in progress (Observed Pin)">
+    <list default="true" id="c7264514-b908-410a-ad4e-5d6812167644" name="Changes" comment="First working solution (to be simplified later)">
+      <change afterPath="$PROJECT_DIR$/src/PrimeNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObservedPins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObservedPins.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <updated>1668284843255</updated>
       <workItem from="1668284845687" duration="857000" />
       <workItem from="1668338749855" duration="237000" />
-      <workItem from="1668349584763" duration="4157000" />
+      <workItem from="1668349584763" duration="5093000" />
     </task>
     <task id="LOCAL-00001" summary="Work in progress (Observed Pin)">
       <created>1668285063089</created>
@@ -74,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668285063089</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First working solution (to be simplified later)">
+      <created>1668355765379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668355765379</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First working solution (to be simplified later)">
+      <created>1668355886825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668355886825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Work in progress (Observed Pin)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work in progress (Observed Pin)" />
+    <MESSAGE value="First working solution (to be simplified later)" />
+    <option name="LAST_COMMIT_MESSAGE" value="First working solution (to be simplified later)" />
   </component>
 </project>
