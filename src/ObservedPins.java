@@ -6,7 +6,9 @@ import java.util.List;
 
 public class ObservedPins {
     public static void main (String[] args) {
-        List <String> list = getPINs("1357");
+        System.out.println(poisbleCombinations("28356"));
+        System.out.println(poisbleCombinations("8356"));
+        List <String> list = getPINs("11");
         for (String x : list){
             System.out.println(x);
         }
@@ -45,19 +47,28 @@ public class ObservedPins {
      * */
     public static List<String> getPINs(String observed){
         ArrayList<String> results = new ArrayList<>();
+        for(int i=0; i<observed.length(); i++){
+            int count;
+            int lenghtOfTheAdjacentNumbers = adjacentNumbers().get(observed.charAt(i)).length;
+            int signCount = 0;
+            String [] signsToAdd = adjacentNumbers().get(observed.charAt(i));
+            String singleSign;
+            for (int j=0; j < poisbleCombinations(observed); j+=poisbleCombinations(observed.substring(i+1))){
+                count = j;
 
-        for (String x : adjacentNumbers().get(observed.charAt(0))){
-            for (int j=0; j < poisbleCombinations(observed)/adjacentNumbers().get(observed.charAt(0)).length;j++){
-                results.add(x);
-            }
-        }
-        for(int i=1; i<observed.length(); i++){
-            //int possibleCombination = poisbleCombinations(observed.substring(i));
-            for (int j=0; j < poisbleCombinations(observed); j+=adjacentNumbers().get(observed.charAt(i)).length){
-                int count = j;
-                for (String x : adjacentNumbers().get(observed.charAt(i))){
-                    results.set(count , results.get(count).concat(x));
-                    count ++;
+                if(signCount >= lenghtOfTheAdjacentNumbers){
+                    signCount = 0;
+                }
+                singleSign = signsToAdd[signCount];
+                signCount++;
+                for (int k=0; k < poisbleCombinations(observed.substring(i+1)); k++){
+                    if(i==0){
+                        results.add(singleSign);
+                    }else {
+                        results.set(count , results.get(count).concat(singleSign));
+                    }
+                    count++;
+
                 }
 
             }
