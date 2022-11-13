@@ -5,16 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ObservedPins {
-    public static void main (String[] args) {
-        System.out.println(poisbleCombinations("28356"));
-        System.out.println(poisbleCombinations("8356"));
-        List <String> list = getPINs("11");
-        for (String x : list){
-            System.out.println(x);
-        }
-
-    }
-
     /**
      * Calculates the number of all possible combinations
      * */

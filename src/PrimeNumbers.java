@@ -1,6 +1,9 @@
 //https://www.codewars.com/kata/5262119038c0985a5b00029f/java
 
 public class PrimeNumbers {
+    /**
+     * Checking prime number
+     * */
     public static boolean isPrime(int num) {
         if(num <= 1) return false;
         if(num == 2) return true;
